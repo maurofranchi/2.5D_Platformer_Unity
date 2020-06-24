@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Player_TransitionIndexer_RunningTurn_Walk_2
   m_EditorClassIdentifier: 
   Index: 2
-  transitionConditions: 1e000000
+  transitionConditions: 1e00000007000000
