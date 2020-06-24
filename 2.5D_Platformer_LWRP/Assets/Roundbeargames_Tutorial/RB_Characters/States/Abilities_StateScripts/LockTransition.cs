@@ -28,7 +28,7 @@ namespace Roundbeargames
 
         public override void OnExit(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-
+            characterState.characterControl.animationProgress.LockTransition = false;
         }
     }
 }
