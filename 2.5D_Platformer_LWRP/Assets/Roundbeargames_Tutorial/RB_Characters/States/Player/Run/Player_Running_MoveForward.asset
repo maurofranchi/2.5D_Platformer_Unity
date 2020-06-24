@@ -16,7 +16,7 @@ MonoBehaviour:
   AllowEarlyTurn: 1
   LockDirection: 1
   LockDirectionNextState: 0
-  Constant: 0
+  Constant: 1
   SpeedGraph:
     serializedVersion: 2
     m_Curve:
@@ -58,4 +58,6 @@ MonoBehaviour:
   UseMomentum: 0
   StartingMomentum: 0
   MaxMomentum: 0
+  StartFromPreviousMomentum: 0
   ClearMomentumOnExit: 0
+  MoveOnHit: 0
