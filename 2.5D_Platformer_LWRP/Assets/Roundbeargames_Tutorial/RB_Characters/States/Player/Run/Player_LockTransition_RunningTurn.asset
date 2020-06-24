@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dfc3080ff22eac4da6ff3c00a39e808, type: 3}
-  m_Name: Player_TransitionIndexer_Running_RunToStop_4
+  m_Script: {fileID: 11500000, guid: 4a8d5f3581ab7db458c04e4b50531d06, type: 3}
+  m_Name: Player_LockTransition_RunningTurn
   m_EditorClassIdentifier: 
-  Index: 4
-  transitionConditions: 180000001d000000
+  UnlockTime: 0.8

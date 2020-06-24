@@ -298,9 +298,11 @@ MonoBehaviour:
   ListAbilityData:
   - {fileID: 11400000, guid: b98ae746719843e4d92aa62f71920b5d, type: 2}
   - {fileID: 11400000, guid: 87c812ce3e3c76143b3659ccb4ce5670, type: 2}
-  - {fileID: 11400000, guid: 471d8ddcbddc15644bcd61869d96ed10, type: 2}
+  - {fileID: 11400000, guid: 7b4e3d09ef5b19b4f8ef5fb34989cd58, type: 2}
   - {fileID: 11400000, guid: a48d63beab6ffa74184019daea474500, type: 2}
   - {fileID: 11400000, guid: ca2923006f69ffe4192632741dd9eecb, type: 2}
+  - {fileID: 11400000, guid: c850f156d1ad24743a945797665c2144, type: 2}
+  - {fileID: 11400000, guid: 56980d5123ab4054e96760b0029f201d, type: 2}
 --- !u!114 &-7640859494455542032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -855,15 +857,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Move
-    m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: Turbo
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102434198838519514}
   m_Solo: 0
@@ -3853,15 +3852,15 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
-    m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: Move
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Turbo
-    m_EventTreshold: 0
+  - m_ConditionMode: 7
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 1
+  - m_ConditionMode: 7
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102610103010179914}
   m_Solo: 0
@@ -5234,15 +5233,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
+  - m_ConditionMode: 2
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Move
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Turbo
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7583543665899619274}
   m_Solo: 0

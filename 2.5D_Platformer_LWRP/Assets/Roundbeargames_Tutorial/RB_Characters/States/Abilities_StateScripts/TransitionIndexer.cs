@@ -12,10 +12,13 @@ namespace Roundbeargames
         RIGHT = 3,
         JUMP = 5,
         LEFT_OR_RIGHT = 7,
+        BOTH_LEFT_AND_RIGHT = 28,
+        NOT_BOTH_LEFT_AND_RIGHT = 29,
         MOVE_FORWARD = 9,
         RUN = 23,
         NOT_RUNNING = 24,
         NOT_MOVING = 22,
+        NOT_TURBO = 30,
 
         DOUBLE_TAP_UP = 16,
         DOUBLE_TAP_DOWN = 17,

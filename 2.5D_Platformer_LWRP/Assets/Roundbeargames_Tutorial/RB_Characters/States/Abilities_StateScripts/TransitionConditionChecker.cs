@@ -90,6 +90,22 @@ namespace Roundbeargames
                             }
                         }
                         break;
+                    case TransitionConditionType.BOTH_LEFT_AND_RIGHT:
+                        {
+                            if (!control.MoveLeft || !control.MoveRight)
+                            {
+                                return false;
+                            }
+                        }
+                        break;
+                    case TransitionConditionType.NOT_BOTH_LEFT_AND_RIGHT:
+                        {
+                            if (control.MoveLeft && control.MoveRight)
+                            {
+                                return false;
+                            }
+                        }
+                        break;
                     case TransitionConditionType.GROUNDED:
                         {
                             if (control.SkinnedMeshAnimator.GetBool(HashManager.Instance.DicMainParams[TransitionParameter.Grounded]) == false)
@@ -281,6 +297,14 @@ namespace Roundbeargames
                                         return false;
                                     }
                                 }
+                            }
+                        }
+                        break;
+                    case TransitionConditionType.NOT_TURBO:
+                        {
+                            if (control.Turbo)
+                            {
+                                return false;
                             }
                         }
                         break;
