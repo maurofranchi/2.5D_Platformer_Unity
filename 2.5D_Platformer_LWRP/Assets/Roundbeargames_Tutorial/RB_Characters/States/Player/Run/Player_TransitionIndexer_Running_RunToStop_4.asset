@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51056033d2debef4d91a307aa76d01a5, type: 3}
-  m_Name: General_CheckTurbo
+  m_Script: {fileID: 11500000, guid: 4dfc3080ff22eac4da6ff3c00a39e808, type: 3}
+  m_Name: Player_TransitionIndexer_Running_RunToStop_4
   m_EditorClassIdentifier: 
+  Index: 4
+  transitionConditions: 18000000

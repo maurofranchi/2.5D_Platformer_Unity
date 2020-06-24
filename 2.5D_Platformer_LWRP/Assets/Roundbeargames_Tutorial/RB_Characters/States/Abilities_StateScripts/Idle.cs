@@ -10,7 +10,6 @@ namespace Roundbeargames
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
             animator.SetBool(HashManager.Instance.DicMainParams[TransitionParameter.Attack], false);
-            animator.SetBool(HashManager.Instance.DicMainParams[TransitionParameter.Move], false);
 
             characterState.ROTATION_DATA.LockEarlyTurn = false;
             characterState.ROTATION_DATA.LockDirectionNextState = false;
@@ -32,19 +31,6 @@ namespace Roundbeargames
                 {
                     characterState.JUMP_DATA.Jumped = false;
                 }
-            }
-
-            if (characterState.characterControl.MoveLeft && characterState.characterControl.MoveRight)
-            {
-                //do nothing
-            }
-            else if (characterState.characterControl.MoveRight)
-            {
-                //animator.SetBool(HashManager.Instance.DicMainParams[TransitionParameter.Move], true);
-            }
-            else if (characterState.characterControl.MoveLeft)
-            {
-                //animator.SetBool(HashManager.Instance.DicMainParams[TransitionParameter.Move], true);
             }
         }
 
