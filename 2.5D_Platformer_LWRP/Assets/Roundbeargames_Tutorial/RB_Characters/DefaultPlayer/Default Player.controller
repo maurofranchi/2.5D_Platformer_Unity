@@ -300,7 +300,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 468d1576944f6c747a4e76d122923fa7, type: 2}
   - {fileID: 11400000, guid: f6031a826b96fee429b35a828406b2a3, type: 2}
   - {fileID: 11400000, guid: ca2923006f69ffe4192632741dd9eecb, type: 2}
-  - {fileID: 11400000, guid: 471d8ddcbddc15644bcd61869d96ed10, type: 2}
+  - {fileID: 11400000, guid: 880c75dbd277f9b4e82ade20d7fb6633, type: 2}
   - {fileID: 11400000, guid: 87c812ce3e3c76143b3659ccb4ce5670, type: 2}
   - {fileID: 11400000, guid: 25a2dbd7b99804e40a785c9f792c3b89, type: 2}
   - {fileID: 11400000, guid: da90bd5f679b0884eb6f41a4fa4fcc35, type: 2}
@@ -859,8 +859,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
+  - m_ConditionMode: 2
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: TransitionIndex
@@ -3857,8 +3857,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
+  - m_ConditionMode: 2
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
   - m_ConditionMode: 7
     m_ConditionEvent: TransitionIndex
@@ -5238,8 +5238,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: ForceTransition
+  - m_ConditionMode: 2
+    m_ConditionEvent: LockTransition
     m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: TransitionIndex
