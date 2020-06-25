@@ -308,6 +308,22 @@ namespace Roundbeargames
                             }
                         }
                         break;
+                    case TransitionConditionType.TURBO:
+                        {
+                            if (!control.Turbo)
+                            {
+                                return false;
+                            }
+                        }
+                        break;
+                    case TransitionConditionType.NOT_TURBO:
+                        {
+                            if (control.Turbo)
+                            {
+                                return false;
+                            }
+                        }
+                        break;
                 }
             }
 

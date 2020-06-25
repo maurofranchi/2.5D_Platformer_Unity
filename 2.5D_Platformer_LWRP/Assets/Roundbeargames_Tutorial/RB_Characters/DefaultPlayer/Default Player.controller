@@ -303,6 +303,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 471d8ddcbddc15644bcd61869d96ed10, type: 2}
   - {fileID: 11400000, guid: 87c812ce3e3c76143b3659ccb4ce5670, type: 2}
   - {fileID: 11400000, guid: 25a2dbd7b99804e40a785c9f792c3b89, type: 2}
+  - {fileID: 11400000, guid: da90bd5f679b0884eb6f41a4fa4fcc35, type: 2}
+  - {fileID: 11400000, guid: 2b546657053a08645a91b0a9ab39ed46, type: 2}
 --- !u!114 &-7640859494455542032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,21 +862,18 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: ForceTransition
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Move
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Turbo
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102434198838519514}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.05257708
+  m_TransitionDuration: 0.094706714
   m_TransitionOffset: 0
-  m_ExitTime: 0.9599986
+  m_ExitTime: 0.9322208
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2007,7 +2006,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Running Turn 180
+  m_Name: Running Turn
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3861,12 +3860,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: ForceTransition
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Move
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Turbo
-    m_EventTreshold: 0
+  - m_ConditionMode: 7
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 1
+  - m_ConditionMode: 7
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102610103010179914}
   m_Solo: 0
@@ -5242,12 +5241,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: ForceTransition
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Move
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Turbo
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: TransitionIndex
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7583543665899619274}
   m_Solo: 0

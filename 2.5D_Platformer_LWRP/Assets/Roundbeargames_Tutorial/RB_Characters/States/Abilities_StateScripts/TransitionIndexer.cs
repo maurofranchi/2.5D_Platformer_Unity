@@ -16,6 +16,8 @@ namespace Roundbeargames
         RUN = 23,
         NOT_RUNNING = 24,
         NOT_MOVING = 22,
+        TURBO = 28,
+        NOT_TURBO = 29,
 
         DOUBLE_TAP_UP = 16,
         DOUBLE_TAP_DOWN = 17,
@@ -70,6 +72,10 @@ namespace Roundbeargames
                     {
                         animator.SetInteger(HashManager.Instance.DicMainParams[TransitionParameter.TransitionIndex], Index);
                     }
+                }
+                else
+                {
+                    animator.SetInteger(HashManager.Instance.DicMainParams[TransitionParameter.TransitionIndex], 0);
                 }
             }
         }
